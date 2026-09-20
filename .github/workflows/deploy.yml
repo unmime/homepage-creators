@@ -1,0 +1,49 @@
+name: Deploy to Cloudflare Workers
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.repository }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.20.0
+
+      - name: Build site
+        run: zola build --base-url "${{ vars.SITE_URL }}"
+
+      - name: Inject _headers
+        run: |
+          cat > public/_headers <<'EOF'
+          /img/*
+            Cache-Control: public, max-age=31536000, immutable
+          /processed_images/*
+            Cache-Control: public, max-age=31536000, immutable
+          /iconfont/*
+            Cache-Control: public, max-age=604800
+          /main.css
+            Cache-Control: public, max-age=604800
+          /js/*
+            Cache-Control: public, max-age=604800
+          EOF
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
