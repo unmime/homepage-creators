@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "homepage-creators",
+  "compatibility_date": "2026-09-20",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  // homepage-creators - 个人主页（Zola 主题 Homepage-Creators）
+  "routes": [
+    { "pattern": "home.unmi.me", "custom_domain": true }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
