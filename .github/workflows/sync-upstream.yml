@@ -1,12 +1,21 @@
 name: Sync Upstream
 
+# 从上游 iWangJiaxiang/Homepage-Creators 同步最新提交到本 fork
+# 采用 merge 方式，不会覆盖本仓库自己的提交（如部署工作流）
 permissions:
   contents: write
 
 on:
   schedule:
+    # 每天 03:30（北京时间）检查一次上游更新
     - cron: '30 19 * * *'
   workflow_dispatch:
+    inputs:
+      force:
+        description: '强制同步（即使有冲突也尝试）'
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: upstream-sync-${{ github.repository }}
@@ -14,25 +23,53 @@ concurrency:
 
 jobs:
   sync:
+    name: Sync from upstream
     runs-on: ubuntu-latest
     if: ${{ github.event.repository.fork }}
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-          token: '${{ secrets.GITHUB_TOKEN }}'
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - id: check
+      - name: Configure git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch upstream
+        run: |
           git remote add upstream https://github.com/iWangJiaxiang/Homepage-Creators.git
           git fetch upstream main
-          echo "behind=$(git rev-list --count HEAD..upstream/main)" >> "$GITHUB_OUTPUT"
 
-      - if: steps.check.outputs.behind != '0'
-        run: git merge upstream/main --no-edit -m "chore: sync upstream $(date +%Y-%m-%d)"
+      - name: Check if update available
+        id: check
+        run: |
+          BEHIND=$(git rev-list --count HEAD..upstream/main)
+          echo "behind=$BEHIND" >> "$GITHUB_OUTPUT"
+          if [ "$BEHIND" -gt 0 ]; then
+            echo "发现 $BEHIND 个上游新提交"
+          else
+            echo "已是最新，无需同步"
+          fi
 
-      - if: steps.check.outputs.behind != '0'
+      - name: Merge upstream
+        if: steps.check.outputs.behind != '0'
+        run: |
+          git merge upstream/main --no-edit -m "chore: sync upstream $(date +%Y-%m-%d)" \
+            || { echo "::warning::合并有冲突，需要手动处理"; exit 1; }
+
+      - name: Push changes
+        if: steps.check.outputs.behind != '0'
         run: git push origin main
+
+      - name: Summary
+        run: |
+          if [ "${{ steps.check.outputs.behind }}" = "0" ]; then
+            echo "### ✅ 已是最新" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### 🔄 已同步 ${{ steps.check.outputs.behind }} 个上游提交" >> "$GITHUB_STEP_SUMMARY"
+          fi
