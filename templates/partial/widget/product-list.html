@@ -15,7 +15,12 @@
       {% for item in value.items %}
       <div class="group-item">
         <a class="group-item-icon" href="{{ item.url | safe }}" target="_blank">
+          {% if item.logo is ending_with(".svg") %}
+          {# SVG 是矢量图，Zola 图片处理管线无法缩放/转格式，直接引用 #}
+          <img class="group-item-icon-img" src="{{ item.logo | safe }}" alt="{{ item.title | safe }}" loading="lazy" decoding="async">
+          {% else %}
           {{ macro::img_progressive_loading_single_size(src=item.logo, class="group-item-icon-img") }}
+          {% endif %}
         </a>
         <div class="group-info-group">
           <div class="group-info">
