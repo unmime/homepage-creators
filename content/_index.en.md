@@ -12,214 +12,146 @@ new = "New"
 
 [extra.nav.message]
 enable = true
-text = "🎉 Visit Author's Blog"
-url = "https://blog.jiaxiang.wang"
+text = "🎉 All self-hosted services are live"
+url = "#services"
 
 [extra.nav.center]
 menus = [
     { name = "Home", url = "Home", internal = true },
-    { name = "Themes", url = "Themes", internal = true },
-    { name = "Blog", url = "Blog", internal = true },
-    { name = "Media", url = "Media", internal = true },
-    { name = "Projects", url = "https://blog.jiaxiang.wang/tags/project/", internal = false },
+    { name = "Services", url = "Services", internal = true },
+    { name = "Self-hosting", url = "Self-hosting", internal = true },
+    { name = "Projects", url = "Projects", internal = true },
 ]
 
 [extra.nav.right]
 menus = [
-    { name = "Author's Blog", url = "https://blog.jiaxiang.wang", internal = false },
-    { name = "Author's Github", url = "https://github.com/iWangJiaxiang", internal = false },
+    { name = "Github", url = "https://github.com/unmime", internal = false },
 ]
 
 [[extra.index.widgets]]
 type = "header"
 [extra.index.widgets.value]
-title_1 = "Jiaxiang Wang"
-title_2 = "王嘉祥"
-bio_1 = "Cross-disciplinary <span class=\"inline-word\">innovation</span> in tech & music"
-bio_2 = "Sharing experiences and insights"
-about_url = "https://blog.jiaxiang.wang/about/"
+title_1 = "langdon"
+title_2 = "Self-hosting enthusiast"
+bio_1 = "Tinkering with self-hosted services, chasing <span class=\"inline-word\">data ownership</span>"
+bio_2 = "Notes on deployment and operations"
+about_url = "#services"
 cover = "/img/logo.svg"
 [[extra.index.widgets.value.links]]
 class_icon = " icon-github-line"
-url = "https://github.com/iWangJiaxiang"
-[[extra.index.widgets.value.links]]
-class_icon = " icon-github-line"
-url = "https://github.com/iWangJiaxiang"
-
-
-[[extra.index.widgets]]
-type = "featured-posts"
-[extra.index.widgets.value]
-title = "Featured Posts"
-bio = "Curated reads worth your time"
-style = "background: linear-gradient(180deg, #f5f7fa 0%, #c3cfe2 100%);"
-[[extra.index.widgets.value.columns]]
-title = "🔧 Tech"
-[[extra.index.widgets.value.columns.items]]
-title = "Pangolin: A Reverse Proxy Based on Zero Trust"
-url = "https://blog.jiaxiang.wang/articles/pangolin-a-reverse-proxy-for-zero-trust-network/"
-[[extra.index.widgets.value.columns.items]]
-title = "GitHub Action: Automatic Scheduled Releases for Static Sites"
-url = "https://blog.jiaxiang.wang/articles/github-action-makes-static-site-publish-on-schedule/"
-[[extra.index.widgets.value.columns.items]]
-title = "Embracing AVIF: Best Practices for Enhancing Website Speed (with Zola Template)"
-url = "https://blog.jiaxiang.wang/articles/use-avif-to-enhance-website-speed-and-zola-macro-template/"
-[[extra.index.widgets.value.columns]]
-title = "🎵 Music"
-[[extra.index.widgets.value.columns.items]]
-title = "Singing Supercomputing: 'A Supercomputer for the World'"
-url = "https://blog.jiaxiang.wang/articles/sc-song/"
-[[extra.index.widgets.value.columns.items]]
-title = "Continuing the Legacy: 'Computing for the Future'"
-url = "https://blog.jiaxiang.wang/articles/cs-song/"
-[[extra.index.widgets.value.columns.items]]
-title = "Demystifying Supercomputing! A Post-95s Engineer Decides to Sing It Out"
-url = "https://blog.jiaxiang.wang/articles/news-sc-song/"
-[[extra.index.widgets.value.columns]]
-title = "🌐 Open Source"
-[[extra.index.widgets.value.columns.items]]
-title = "Giving Back to the Community: This Blog Theme is Now Open Source!"
-url = "https://blog.jiaxiang.wang/articles/announcement-of-opensource-blog-theme-project/"
-[[extra.index.widgets.value.columns.items]]
-title = "Show Your Unique Side: Personal Homepage Theme is Now Open Source!"
-url = "https://blog.jiaxiang.wang/articles/announcement-of-opensource-personal-homepage-theme-project/"
-[[extra.index.widgets.value.columns.items]]
-title = "Are There Copyright Infringement Risks in Open Source Blog Themes? A Deep Compliance Analysis"
-url = "https://blog.jiaxiang.wang/articles/compliance-of-jiaxiang-wang-blog-theme/"
+url = "https://github.com/unmime"
 
 
 [[extra.index.widgets]]
 type = "author"
 [extra.index.widgets.value]
-name = "Jiaxiang Wang"
+name = "langdon"
 avatar = "/img/logo01.webp"
-title = "Team leader, architect,"
-bio = "Focused on cross-disciplinary innovation in technology and music, sharing experiences and insights. Engaged in HPC, Cloud, AI and more. Dedicated to building open-source tools that empower creators and developers worldwide."
+title = "Self-hosting enthusiast,"
+bio = '''Passionate about self-hosting and open source, maintaining a multi-region server fleet and keeping data and services under my own control. Focused on reverse proxies, container orchestration, automated operations and access optimization — and I like turning hard-won lessons into reusable solutions.'''
 
 
 [[extra.index.widgets]]
-type = "product-single"
+type = "featured-posts"
 [extra.index.widgets.value]
-tip = "Home"
-title = "Personal Homepage<br>Now Open Source"
-bio_1 = "Stunning visual <span class=\"inline-word\">effects</span> just like this page"
-bio_2 = "Easy to configure, quickly build your <span class=\"inline-word\">homepage</span>"
-img = "/img/homepage-single.webp"
-[[extra.index.widgets.value.links]]
-class = "primary-button"
-url = "https://github.com/iWangJiaxiang/Homepage-Creators"
-name = "Get Source Code"
-[[extra.index.widgets.value.links]]
-class = "second-link"
-url = "https://github.com/iWangJiaxiang"
-name = "Developer's Page"
-
-
-[[extra.index.widgets]]
-type = "event"
-[extra.index.widgets.value]
-tip = "Event"
-title = "Blog Theme<br>Now Open Source!"
-bio = "A theme built for creators. Start your blog journey at zero cost with zero maintenance, and grow with other amazing bloggers!"
-button = "Get Source Code"
-note = "Built with Zola"
-url = "https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang"
-img = "/img/blog-event.webp"
-
-
-[[extra.index.widgets]]
-type = "product-single"
-[extra.index.widgets.value]
-tip = "Blog"
-title = "Novel Things<br>Interesting Ideas"
-bio_1 = "A beloved knowledge-sharing <span class=\"inline-word\">blog</span>"
-bio_2 = "Helping millions explore the digital <span class=\"inline-word\">world</span>"
-img = "/img/blog.webp"
-style = "background-image: linear-gradient(180deg, #830FC1 0%, #3D00A0 100%);"
-[[extra.index.widgets.value.links]]
-class = "primary-button"
-url = "https://blog.jiaxiang.wang/"
-name = "Visit Blog"
-[[extra.index.widgets.value.links]]
-class = "second-link"
-url = "https://blog.jiaxiang.wang/articles/misc/from-0-to-1-the-blog-review/"
-name = "Origin Story"
+title = "Daily Services"
+bio = "Self-hosted services I use every day"
+style = "background: linear-gradient(180deg, #f5f7fa 0%, #c3cfe2 100%);"
+[[extra.index.widgets.value.columns]]
+title = "🚀 Core"
+[[extra.index.widgets.value.columns.items]]
+title = "Vaultwarden Password Manager"
+url = "https://pwd.zlzl.io"
+[[extra.index.widgets.value.columns.items]]
+title = "Memos"
+url = "https://memos.zlzl.io"
+[[extra.index.widgets.value.columns.items]]
+title = "FreshRSS"
+url = "https://rss.zlzl.io"
+[[extra.index.widgets.value.columns]]
+title = "🛠 Infrastructure"
+[[extra.index.widgets.value.columns.items]]
+title = "VpsCT Server Panel"
+url = "https://vpsct.unmi.me"
+[[extra.index.widgets.value.columns.items]]
+title = "CloudFlare-ImgBed"
+url = "https://img.unmi.me"
+[[extra.index.widgets.value.columns.items]]
+title = "FlareMo Notes"
+url = "https://fm.unmi.me"
+[[extra.index.widgets.value.columns]]
+title = "🌐 Open Source"
+[[extra.index.widgets.value.columns.items]]
+title = "unmi_TGtool Telegram Toolkit"
+url = "https://github.com/unmime/unmi_TGtool"
+[[extra.index.widgets.value.columns.items]]
+title = "GitHub Profile"
+url = "https://github.com/unmime"
 
 
 [[extra.index.widgets]]
 type = "product-list"
 [extra.index.widgets.value]
-title = "Media"
-bio = "Contributing to the spirit of internet sharing"
+title = "Services"
+bio = "Self-hosted services currently running"
 [[extra.index.widgets.value.items]]
 logo = "/img/internet.svg"
-title = "Personal Blog"
-bio = "Cross-disciplinary innovation in tech & music, sharing experiences and insights"
-url = "https://blog.jiaxiang.wang/"
-button = "Visit"
-[[extra.index.widgets.value.items]]
-logo = "/img/afdian.png"
-title = "Afdian"
-bio = "Sharing interesting and informative articles & resources"
-url = "https://afdian.com/a/wangjiaxiang"
-button = "Visit"
-note = "Subscription"
-new = true
-[[extra.index.widgets.value.items]]
-logo = "/img/wechat.svg"
-title = "WeChat"
-bio = "Get the latest updates first"
-url = "https://blog.jiaxiang.wang/wechat"
+title = "Vaultwarden"
+bio = "Self-hosted password manager with cross-platform sync"
+url = "https://pwd.zlzl.io"
 button = "Visit"
 hot = true
 [[extra.index.widgets.value.items]]
-logo = "/img/follow.svg"
-title = "Follow"
-bio = "One-stop article subscription"
-url = "https://app.follow.is/share/feeds/89889813571729408"
+logo = "/img/internet.svg"
+title = "Memos"
+bio = "Lightweight self-hosted note-taking"
+url = "https://memos.zlzl.io"
+button = "Visit"
+[[extra.index.widgets.value.items]]
+logo = "/img/internet.svg"
+title = "FreshRSS"
+bio = "Self-hosted RSS reader on your own terms"
+url = "https://rss.zlzl.io"
+button = "Visit"
+[[extra.index.widgets.value.items]]
+logo = "/img/internet.svg"
+title = "VpsCT"
+bio = "Server panel for unified multi-host management"
+url = "https://vpsct.unmi.me"
+button = "Visit"
+note = "Server panel"
+[[extra.index.widgets.value.items]]
+logo = "/img/internet.svg"
+title = "CloudFlare-ImgBed"
+bio = "Serverless image hosting on Cloudflare"
+url = "https://img.unmi.me"
+button = "Visit"
+[[extra.index.widgets.value.items]]
+logo = "/img/internet.svg"
+title = "FlareMo"
+bio = "AI-native notes, Memos compatible"
+url = "https://fm.unmi.me"
 button = "Visit"
 new = true
-
-
-[[extra.index.widgets]]
-type = "product-single"
-[extra.index.widgets.value]
-tip = "Themes"
-title = "Blog Theme<br>Open Source"
-bio_1 = "Build your own <span class=\"inline-word\">blog</span> at zero cost"
-bio_2 = "Enter the world of creative <span class=\"inline-word\">blogging</span>"
-img = "/img/theme-single.webp"
-style = "background-image: linear-gradient(180deg, #0F6AC1 0%, #002EA0 100%);"
-style_tip = "color: white; opacity: 0.6;"
-[[extra.index.widgets.value.links]]
-class = "primary-button"
-url = "https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang"
-name = "Visit Project"
-[[extra.index.widgets.value.links]]
-class = "second-link"
-url = "https://theme.jiaxiang.wang/"
-name = "Visit Demo"
 
 
 [[extra.index.widgets]]
 type = "product-list"
 [extra.index.widgets.value]
-title = "Themes"
-bio = "Helping more users build extraordinary websites"
+title = "Projects"
+bio = "Open-source tools I built and maintain"
 [[extra.index.widgets.value.items]]
 logo = "/img/internet.svg"
-title = "Jiaxiang.Wang"
-bio = "Static personal blog theme (Zola)"
-url = "https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang"
+title = "unmi_TGtool"
+bio = "Modular Telegram bot toolkit"
+url = "https://github.com/unmime/unmi_TGtool"
 button = "Visit"
-note = "Author's Blog Theme"
+note = "Pluggable, zero-dependency"
 hot = true
 [[extra.index.widgets.value.items]]
 logo = "/img/internet.svg"
-title = "Homepage Creators"
-bio = "Static personal homepage theme (Zola)"
-url = "https://github.com/iWangJiaxiang/Homepage-Creators"
+title = "GitHub"
+bio = "All repositories and projects"
+url = "https://github.com/unmime"
 button = "Visit"
-note = "This Site's Theme"
-new = true
 +++

@@ -1,11 +1,11 @@
 # The URL the site will be built for
-base_url = "https://jiaxiang.wang"
+base_url = "https://home.unmi.me"
 
-title = "个人主页"
+title = "langdon"
 
-author = "王嘉祥"
+author = "langdon"
 
-description = "好奇、探索、创造。个人主页导航网站。"
+description = "自托管爱好者。折腾自托管服务，把数据和服务掌握在自己手里。"
 
 default_language = "zh"
 
@@ -18,8 +18,8 @@ build_search_index = false
 minify_html = true
 
 [languages.en]
-title = "Homepage"
-description = "Curiosity, exploration, creation. Personal homepage."
+title = "langdon"
+description = "Self-hosting enthusiast. Keeping data and services under my own control."
 
 [markdown]
 # Whether to do syntax highlighting
@@ -29,32 +29,31 @@ highlight_code = false
 [extra]
 
 [extra.site]
-start_year = 2024
+start_year = 2026
 logo = "/img/logo.webp"
 # default to use logo value
 nav_logo = "/img/logo.webp"
 # 联系邮箱
-mail = "contact@example.com"
+mail = ""
 # ICP 备案号
-compliance_icp = "ICP备XXXXXXXX号"
+compliance_icp = ""
 # 公安备案号
-compliance_security = "公网安备0000000000号"
+compliance_security = ""
 # 公安备案链接
-compliance_security_link = "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=0000000000"
+compliance_security_link = ""
 
 
 # umami 访问量统计
 [extra.analytics.umami]
 enable = false
 # 生效的域名，避免被 localhost 统计
-domain = "example.com"
+domain = "home.unmi.me"
 # 自己的umami服务地址
-remote_url = "https://umami-api"
-#remote_url = "https://umami-wangjiaxiang-d12g.netlify.app"
+remote_url = ""
 # 网站id
-id = "5c123448-a501-444c-830a-e55df930cd4a"
+id = ""
 # js 加载地址
-js = "/path/to/script.js"
+js = ""
 
 # 其他设置
 [extra.other]
