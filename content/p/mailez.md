@@ -56,6 +56,16 @@ slug = "memos"
 title = "Memos"
 desc = "随手记点什么"
 logo = "/img/icons/memos.svg"
+
+[[extra.shots]]
+src = "/img/shots/mailez-1.webp"
+caption = "收件箱：多账号统一查看"
+
+[[extra.shots]]
+src = "/img/shots/mailez-2.webp"
+caption = "会话视图：按主题聚合往来邮件"
+
+
 +++
 
 很多人已经搭好了邮件服务器（或者用上了 Cloud Mail 这类服务），但缺一个**顺手的网页端**：命令行看邮件太痛苦，第三方客户端又要配置一堆 IMAP 参数。

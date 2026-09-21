@@ -51,6 +51,16 @@ title = "RSSHub"
 desc = "万物皆可 RSS"
 logo = "/img/icons/rsshub.svg"
 
+
+[[extra.shots]]
+src = "/img/shots/sink-1.webp"
+caption = "访问统计仪表盘：点击量趋势、地理分布与来源渠道"
+
+[[extra.shots]]
+src = "/img/shots/sink-2.webp"
+caption = "链接管理列表：短码、目标地址与实时点击数据"
+
+
 +++
 
 短链接服务的需求很朴素：**把长网址变短，顺便看看有多少人点了**。但市面上要么收费，要么加广告跳转页，要么哪天就关停了。

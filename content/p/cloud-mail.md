@@ -56,6 +56,16 @@ slug = "memos"
 title = "Memos"
 desc = "随手记点什么"
 logo = "/img/icons/memos.svg"
+
+[[extra.shots]]
+src = "/img/shots/cloudmail-1.webp"
+caption = "邮件管理后台：收发件与多账号切换"
+
+[[extra.shots]]
+src = "/img/shots/cloudmail-2.webp"
+caption = "邮件详情与撰写界面"
+
+
 +++
 
 邮箱是最难自建的服务之一，因为要处理 SMTP、IMAP、垃圾邮件过滤、SPF/DKIM/DMARC 一堆协议细节。但它也是最值得自建的 —— 邮箱里承载的验证码、账单、重要通知，几乎是你数字身份的核心。

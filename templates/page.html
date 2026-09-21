@@ -36,6 +36,23 @@
     {{ page.content | safe }}
   </div>
 
+  {# ── 界面截图 ── #}
+  {% if d.shots %}
+  <section class="proj-section">
+    <h2 class="proj-h2">{{ d.shots_title | default(value='界面预览') }}</h2>
+    <div class="proj-shots{% if d.shots | length == 1 %} single{% endif %}">
+      {% for s in d.shots %}
+      <figure class="proj-shot">
+        <div class="shot-frame">
+          <img src="{{ s.src }}" alt="{{ s.caption | default(value=page.title) }}" loading="lazy" decoding="async">
+        </div>
+        {% if s.caption %}<figcaption>{{ s.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   {# ── 使用场景 ── #}
   {% if d.scenarios %}
   <section class="proj-section">

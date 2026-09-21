@@ -54,6 +54,16 @@ slug = "rsshub"
 title = "RSSHub"
 desc = "万物皆可 RSS"
 logo = "/img/icons/rsshub.svg"
+
+[[extra.shots]]
+src = "/img/shots/flaremo-1.webp"
+caption = "桌面端：时间线笔记，支持 Markdown 与标签"
+
+[[extra.shots]]
+src = "/img/shots/flaremo-2.webp"
+caption = "移动端：随时随地记录与查阅"
+
+
 +++
 
 如果你已经在用 Memos，可能会遇到一个瓶颈：**想到处用 AI 处理笔记，但不知道从哪下手**；或者团队里想共享一些文档，又不想再引入一套重型知识库系统。

@@ -56,6 +56,16 @@ slug = "vaultwarden"
 title = "Vaultwarden"
 desc = "密码自己管"
 logo = "/img/icons/vaultwarden.svg"
+
+[[extra.shots]]
+src = "/img/shots/imgbed-1.webp"
+caption = "文件管理面板：图片列表与存储用量"
+
+[[extra.shots]]
+src = "/img/shots/imgbed-2.webp"
+caption = "上传界面：支持拖拽与批量上传"
+
+
 +++
 
 写博客、发文章绕不开插图，而图片放哪里一直是个问题：放服务器占硬盘和带宽、放第三方图床怕跑路、放对象存储又要配置密钥和 CDN。
