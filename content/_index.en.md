@@ -61,35 +61,35 @@ style = "background: linear-gradient(180deg, #f5f7fa 0%, #c3cfe2 100%);"
 title = "⭐ Most Recommended"
 [[extra.index.widgets.value.columns.items]]
 title = "Vaultwarden — own your passwords"
-url = "https://pwd.zlzl.io"
+page = "/p/vaultwarden/"
 [[extra.index.widgets.value.columns.items]]
 title = "Memos — just jot things down"
-url = "https://memos.zlzl.io"
+page = "/p/memos/"
 [[extra.index.widgets.value.columns.items]]
 title = "RSSHub — RSS for everything"
-url = "https://rss.zlzl.io"
+page = "/p/rsshub/"
 [[extra.index.widgets.value.columns]]
 title = "🧰 Handy Tools"
 [[extra.index.widgets.value.columns.items]]
 title = "One IP — IP & network diagnostics"
-url = "https://1ip.unmi.me"
+page = "/p/oneip/"
 [[extra.index.widgets.value.columns.items]]
 title = "Sink — URL shortener"
-url = "https://s.unmi.me"
+page = "/p/sink/"
 [[extra.index.widgets.value.columns.items]]
 title = "Sanyue ImgHub — image host"
-url = "https://img.unmi.me"
+page = "/p/imgbed/"
 [[extra.index.widgets.value.columns]]
 title = "🏠 Self-hosted"
 [[extra.index.widgets.value.columns.items]]
 title = "VpsCT — server panel"
-url = "https://vpsct.unmi.me"
+page = "/p/vpsct/"
 [[extra.index.widgets.value.columns.items]]
 title = "Cloud Mail — mail service"
-url = "https://mail.unmi.me"
+page = "/p/cloud-mail/"
 [[extra.index.widgets.value.columns.items]]
 title = "FlareMo — AI-native notes"
-url = "https://fm.unmi.me"
+page = "/p/flaremo/"
 
 
 [[extra.index.widgets]]
@@ -99,6 +99,7 @@ title = "Picks"
 bio = "Open-source projects I use and would happily recommend"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/vaultwarden.svg"
+page = "/p/vaultwarden/"
 title = "Vaultwarden"
 bio = "A lightweight Bitwarden server written in Rust. Syncs across phone, desktop and browser while your passwords stay with you — a few hundred MB of RAM, runs on a Raspberry Pi"
 url = "https://pwd.zlzl.io"
@@ -107,6 +108,7 @@ note = "Rust · Password manager"
 hot = true
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/memos.svg"
+page = "/p/memos/"
 title = "Memos"
 bio = "Note-taking stripped to the essentials. Open it and write — no folders, no titles required, more like posting to your own feed. Plain Markdown, portable any time"
 url = "https://memos.zlzl.io"
@@ -115,6 +117,7 @@ note = "Go · Notes"
 hot = true
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/rsshub.svg"
+page = "/p/rsshub/"
 title = "RSSHub"
 bio = "Turns the whole internet into RSS. Weibo, Bilibili, Zhihu, Xiaohongshu, podcasts — almost any site without a feed gets one generated for you"
 url = "https://rss.zlzl.io"
@@ -123,6 +126,7 @@ note = "Node · Feed aggregation"
 hot = true
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/oneip.svg"
+page = "/p/oneip/"
 title = "One IP"
 bio = "A network toolbox I built myself: IP lookup, connectivity diagnosis, browser fingerprint check and AI-service availability, all on one page. Pure frontend + Workers, zero cost"
 url = "https://1ip.unmi.me"
@@ -138,6 +142,7 @@ title = "Tools"
 bio = "Small tools that speed up the daily grind"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/sink.svg"
+page = "/p/sink/"
 title = "Sink"
 bio = "A URL shortener on Cloudflare. The free tier is plenty, with custom slugs, click analytics and geo breakdowns — deploys in minutes"
 url = "https://s.unmi.me"
@@ -145,6 +150,7 @@ button = "Visit"
 note = "Cloudflare · Link shortener"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/imgbed.svg"
+page = "/p/imgbed/"
 title = "Sanyue ImgHub"
 bio = "Serverless image hosting on Cloudflare, no server resources consumed. Works with PicGo-style tools for one-click uploads — great for illustrations in blog posts"
 url = "https://img.unmi.me"
@@ -152,6 +158,7 @@ button = "Visit"
 note = "Cloudflare · Image host"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/mail.svg"
+page = "/p/cloud-mail/"
 title = "Cloud Mail"
 bio = "Self-hosted mail service you can bind to your own domain for sending and receiving. Multi-domain, multi-user, with a clean frontend — a real way out of third-party inboxes"
 url = "https://mail.unmi.me"
@@ -159,6 +166,7 @@ button = "Visit"
 note = "Mail service"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/mailez.svg"
+page = "/p/mailez/"
 title = "Mailez Webmail"
 bio = "A lightweight webmail client, ready whenever you open it. If you already run a mail server but lack a decent web UI, this plugs straight in"
 url = "https://ml.zlzl.io"
@@ -166,6 +174,7 @@ button = "Visit"
 note = "Webmail"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/flaremo.svg"
+page = "/p/flaremo/"
 title = "FlareMo"
 bio = "An AI-native note app with data compatible with Memos. If you want AI in your notes without migrating existing data, it is a smooth upgrade path"
 url = "https://fm.unmi.me"
@@ -181,6 +190,7 @@ title = "Self-hosted"
 bio = "If you want to run your own services too"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/vpsct.svg"
+page = "/p/vpsct/"
 title = "VpsCT"
 bio = "A control panel for managing multiple servers at once. One panel for every node — check status, run commands, install agents, all in a single interface"
 url = "https://vpsct.unmi.me"
@@ -195,6 +205,7 @@ button = "View Status"
 note = "Oracle · Hong Kong · New York · Los Angeles · Guangzhou"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/cfsm.svg"
+page = "/p/cfsm/"
 title = "CF-Server-Monitor"
 bio = "Server monitoring probes running on Cloudflare Workers, free tier is enough. Real-time monitoring, offline alerts, historical data and latency tracking"
 url = "https://github.com/unmime/cf-server-monitor-standalone"
@@ -210,6 +221,7 @@ title = "My Projects"
 bio = "Open-source projects I wrote and maintain"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/tgtool.svg"
+page = "/p/tgtool/"
 title = "unmi_TGtool"
 bio = "A modular Telegram bot toolkit: calculator, FX conversion, crypto quotes. Pluggable modules with zero dependencies — add a feature by dropping in a module"
 url = "https://github.com/unmime/unmi_TGtool"
@@ -218,6 +230,7 @@ note = "Python · Pluggable"
 hot = true
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/oneip.svg"
+page = "/p/oneip/"
 title = "One IP"
 bio = "IP lookup, network diagnostics, browser detection and AI-service status toolbox. React 19 + TypeScript + Cloudflare Workers, pure frontend at zero server cost"
 url = "https://1ip.unmi.me"
@@ -234,6 +247,7 @@ note = "Cloudflare Workers"
 new = true
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/games.svg"
+page = "/p/neon-games/"
 title = "neon-games"
 bio = "A pure frontend mini-game collection: 2048, Breakout, Flappy Bird, piano, Tetris, typing practice. Just open and play — no ads, no sign-in"
 url = "https://github.com/unmime/neon-games"

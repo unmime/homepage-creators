@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macro %}
+
+{% block head %}
+    {{ macro::head_meta_original_title(_permalink = page.path, excerpt = page.description | default(value=page.title), type = 'article') }}
+{% endblock head %}
+
+{% block content %}
+{% set d = page.extra %}
+
+<div class="proj-wrap need-padding">
+  {# ── 返回 ── #}
+  <a class="proj-back" href="{{ config.base_url }}/#{{ d.back_anchor | default(value='精选') }}">
+    <i class="icon-arrow-left-line"></i>
+    <span>{{ d.back_label | default(value='返回首页') }}</span>
+  </a>
+
+  {# ── 头部：图标 + 标题 + 一句话定位 ── #}
+  <header class="proj-hero">
+    <div class="proj-hero-icon">
+      <img src="{{ d.logo }}" alt="{{ page.title }}" width="88" height="88">
+    </div>
+    <div class="proj-hero-main">
+      <h1 class="proj-title">{{ page.title }}</h1>
+      {% if d.tagline %}<p class="proj-tagline">{{ d.tagline }}</p>{% endif %}
+      {% if d.meta %}
+      <div class="proj-meta">
+        {% for m in d.meta %}<span class="proj-meta-item">{{ m }}</span>{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </header>
+
+  {# ── 详情正文 ── #}
+  <div class="proj-body">
+    {{ page.content | safe }}
+  </div>
+
+  {# ── 使用场景 ── #}
+  {% if d.scenarios %}
+  <section class="proj-section">
+    <h2 class="proj-h2">使用场景</h2>
+    <div class="proj-scenarios">
+      {% for s in d.scenarios %}
+      <div class="proj-scenario">
+        <div class="proj-scenario-head">
+          <span class="proj-scenario-idx">{{ loop.index }}</span>
+          <span class="proj-scenario-title">{{ s.title }}</span>
+        </div>
+        <p class="proj-scenario-desc">{{ s.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── 功能亮点 ── #}
+  {% if d.highlights %}
+  <section class="proj-section">
+    <h2 class="proj-h2">功能亮点</h2>
+    <ul class="proj-highlights">
+      {% for h in d.highlights %}<li>{{ h }}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {# ── 跳转按钮（核心） ── #}
+  <section class="proj-section">
+    <h2 class="proj-h2">去看看</h2>
+    <div class="proj-actions">
+      {% if d.repo %}
+      <a class="proj-btn proj-btn-primary" href="{{ d.repo }}" target="_blank" rel="noopener">
+        <i class="icon-github-line"></i>
+        <span>开源地址</span>
+        <em>{{ d.repo_label | default(value=d.repo) }}</em>
+      </a>
+      {% endif %}
+      {% if d.docs %}
+      <a class="proj-btn" href="{{ d.docs }}" target="_blank" rel="noopener">
+        <i class="icon-xiangqing"></i>
+        <span>官方文档</span>
+        <em>{{ d.docs_label | default(value=d.docs) }}</em>
+      </a>
+      {% endif %}
+      {% if d.live %}
+      <a class="proj-btn" href="{{ d.live }}" target="_blank" rel="noopener">
+        <i class="icon-external-link-fill"></i>
+        <span>在线体验</span>
+        <em>我在用的实例</em>
+      </a>
+      {% endif %}
+      {% if d.demo %}
+      <a class="proj-btn" href="{{ d.demo }}" target="_blank" rel="noopener">
+        <i class="icon-link"></i>
+        <span>官方演示</span>
+        <em>{{ d.demo_label | default(value=d.demo) }}</em>
+      </a>
+      {% endif %}
+    </div>
+  </section>
+
+  {# ── 同板块其它项目 ── #}
+  {% if d.related %}
+  <section class="proj-section">
+    <h2 class="proj-h2">相关推荐</h2>
+    <div class="proj-related">
+      {% for r in d.related %}
+      <a class="proj-related-item" href="{{ config.base_url }}/p/{{ r.slug }}/">
+        <img src="{{ r.logo }}" alt="{{ r.title }}" width="44" height="44">
+        <div>
+          <span class="proj-related-title">{{ r.title }}</span>
+          <span class="proj-related-desc">{{ r.desc }}</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endblock content %}

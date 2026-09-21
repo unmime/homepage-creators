@@ -1,6 +1,6 @@
 {# title #}
 {# bio #}
-{# item: title, bio,  url, logo, hot, new #}
+{# item: title, bio, url, logo, hot, new, page(可选 → 点击进 /p/<slug>/ 介绍页) #}
 {% macro product_list(value) %}
 {# 读取 i18n 字符串 #}
 {% if section.extra.i18n is defined %}
@@ -13,8 +13,11 @@
     <div class="group-items">
 
       {% for item in value.items %}
+      {# 有 page → 卡片进介绍页；按钮始终跳外部真实地址 #}
+      {% set has_detail = item.page is defined %}
+      {% set detail_url = item.page | default(value=item.url) %}
       <div class="group-item">
-        <a class="group-item-icon" href="{{ item.url | safe }}" target="_blank">
+        <a class="group-item-icon" href="{{ detail_url | safe }}"{% if not has_detail %} target="_blank"{% endif %}>
           {% if item.logo is ending_with(".svg") %}
           {# SVG 是矢量图，Zola 图片处理管线无法缩放/转格式，直接引用 #}
           <img class="group-item-icon-img" src="{{ item.logo | safe }}" alt="{{ item.title | safe }}" loading="lazy" decoding="async">
@@ -24,11 +27,11 @@
         </a>
         <div class="group-info-group">
           <div class="group-info">
-            <a class="title" href="{{ item.url | safe }}" target="_blank">{{ item.title | safe }}{% if item.hot %}<sup class="hot">{% if i18n is defined %}{{ i18n.hot }}{% else %}Hot{% endif %}</sup>{% endif %}{% if item.new %}<sup class="new">{% if i18n is defined %}{{ i18n.new }}{% else %}New{% endif %}</sup>{% endif %}</a>
-            <a class="discription" href="{{ item.url | safe }}" target="_blank">{{ item.bio | safe }}</a>
+            <a class="title" href="{{ detail_url | safe }}"{% if not has_detail %} target="_blank"{% endif %}>{{ item.title | safe }}{% if item.hot %}<sup class="hot">{% if i18n is defined %}{{ i18n.hot }}{% else %}Hot{% endif %}</sup>{% endif %}{% if item.new %}<sup class="new">{% if i18n is defined %}{{ i18n.new }}{% else %}New{% endif %}</sup>{% endif %}</a>
+            <a class="discription" href="{{ detail_url | safe }}"{% if not has_detail %} target="_blank"{% endif %}>{{ item.bio | safe }}</a>
           </div>
           <div class="group-info-button">
-            <a class="linkbutton" href="{{ item.url | safe }}" target="_blank">{{ item.button | safe }}</a>
+            <a class="linkbutton" href="{{ item.url | safe }}" target="_blank" rel="noopener">{{ item.button | safe }}</a>
             {% if item.note %}<span class="linkbotton-tips">{{ item.note | safe }}</span>{% endif %}
           </div>
         </div>

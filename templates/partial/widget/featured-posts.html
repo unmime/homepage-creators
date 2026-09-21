@@ -21,7 +21,7 @@
         <div class="featured-posts-list"{% if count > 3 %} style="--item-count: {{ count }}"{% endif %}>
           <div class="featured-posts-track{% if count > 3 %} scrolling{% endif %}">
             {% for item in col.items %}
-            <a class="featured-post-item" href="{{ item.url | safe }}" target="_blank">
+            <a class="featured-post-item" href="{{ item.page | default(value=item.url) | safe }}"{% if item.page is not defined %} target="_blank"{% endif %}>
               <span class="featured-post-index">{{ loop.index }}</span>
               <span class="featured-post-title">{{ item.title | safe }}</span>
             </a>
@@ -29,7 +29,7 @@
             {# 若 > 3 条，克隆一份实现无缝循环 #}
             {% if count > 3 %}
               {% for item in col.items %}
-              <a class="featured-post-item" href="{{ item.url | safe }}" target="_blank">
+              <a class="featured-post-item" href="{{ item.page | default(value=item.url) | safe }}"{% if item.page is not defined %} target="_blank"{% endif %}>
                 <span class="featured-post-index">{{ loop.index }}</span>
                 <span class="featured-post-title">{{ item.title | safe }}</span>
               </a>
