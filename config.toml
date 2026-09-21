@@ -1,11 +1,11 @@
 # The URL the site will be built for
 base_url = "https://home.unmi.me"
 
-title = "langdon"
+title = "开源分享"
 
 author = "langdon"
 
-description = "自托管爱好者。折腾自托管服务，把数据和服务掌握在自己手里。"
+description = "分享我在用的开源项目，以及一些有趣的东西。数据自己掌握，维护成本足够低。"
 
 default_language = "zh"
 
@@ -18,8 +18,8 @@ build_search_index = false
 minify_html = true
 
 [languages.en]
-title = "langdon"
-description = "Self-hosting enthusiast. Keeping data and services under my own control."
+title = "Open Source Picks"
+description = "Sharing the open-source projects I use, and some genuinely fun stuff."
 
 [markdown]
 # Whether to do syntax highlighting
