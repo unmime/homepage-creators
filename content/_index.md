@@ -12,14 +12,14 @@ new = "最新"
 
 [extra.nav.message]
 enable = true
-text = "🎉 自托管服务已全部上线"
+text = "🎉 自托管服务与开源项目持续更新中"
 url = "#services"
 
 [extra.nav.center]
 menus = [
     { name = "主页", url = "主页", internal = true },
     { name = "服务", url = "服务", internal = true },
-    { name = "自托管", url = "自托管", internal = true },
+    { name = "基础设施", url = "基础设施", internal = true },
     { name = "项目", url = "项目", internal = true },
 ]
 
@@ -66,27 +66,30 @@ url = "https://pwd.zlzl.io"
 title = "备忘录 Memos"
 url = "https://memos.zlzl.io"
 [[extra.index.widgets.value.columns.items]]
-title = "RSS 阅读 FreshRSS"
-url = "https://rss.zlzl.io"
-[[extra.index.widgets.value.columns]]
-title = "🛠 基础能力"
-[[extra.index.widgets.value.columns.items]]
-title = "服务器管理面板 VpsCT"
-url = "https://vpsct.unmi.me"
-[[extra.index.widgets.value.columns.items]]
-title = "图床 CloudFlare-ImgBed"
-url = "https://img.unmi.me"
-[[extra.index.widgets.value.columns.items]]
-title = "笔记 FlareMo"
+title = "AI 笔记 FlareMo"
 url = "https://fm.unmi.me"
 [[extra.index.widgets.value.columns]]
-title = "🌐 开源项目"
+title = "🛠 基础设施"
 [[extra.index.widgets.value.columns.items]]
-title = "Telegram 工具箱 unmi_TGtool"
-url = "https://github.com/unmime/unmi_TGtool"
+title = "服务器面板 VpsCT"
+url = "https://vpsct.unmi.me"
 [[extra.index.widgets.value.columns.items]]
-title = "GitHub 主页"
-url = "https://github.com/unmime"
+title = "图床 Sanyue ImgHub"
+url = "https://img.unmi.me"
+[[extra.index.widgets.value.columns.items]]
+title = "短链 Sink"
+url = "https://s.unmi.me"
+[[extra.index.widgets.value.columns]]
+title = "🌐 信息与通讯"
+[[extra.index.widgets.value.columns.items]]
+title = "RSS 聚合 RSSHub"
+url = "https://rss.zlzl.io"
+[[extra.index.widgets.value.columns.items]]
+title = "邮箱 Cloud Mail"
+url = "https://mail.unmi.me"
+[[extra.index.widgets.value.columns.items]]
+title = "Webmail Mailez"
+url = "https://ml.zlzl.io"
 
 
 [[extra.index.widgets]]
@@ -108,30 +111,69 @@ bio = "轻量级自托管备忘录，随手记"
 url = "https://memos.zlzl.io"
 button = "访问"
 [[extra.index.widgets.value.items]]
-logo = "/img/icons/freshrss.svg"
-title = "FreshRSS"
-bio = "自托管 RSS 阅读器，信息流自主掌控"
+logo = "/img/icons/flaremo.svg"
+title = "FlareMo"
+bio = "AI 原生笔记，Memos 数据兼容"
+url = "https://fm.unmi.me"
+button = "访问"
+new = true
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/rsshub.svg"
+title = "RSSHub"
+bio = "万物皆可 RSS，为全网生成订阅源"
 url = "https://rss.zlzl.io"
 button = "访问"
 [[extra.index.widgets.value.items]]
-logo = "/img/icons/vpsct.svg"
-title = "VpsCT"
-bio = "多机统一管理的服务器面板"
-url = "https://vpsct.unmi.me"
-button = "访问"
-note = "服务器管理"
-[[extra.index.widgets.value.items]]
 logo = "/img/icons/imgbed.svg"
-title = "CloudFlare-ImgBed"
+title = "Sanyue ImgHub"
 bio = "基于 Cloudflare 的无服务器图床"
 url = "https://img.unmi.me"
 button = "访问"
 [[extra.index.widgets.value.items]]
-logo = "/img/icons/flaremo.svg"
-title = "FlareMo"
-bio = "AI 原生笔记，Memos 兼容"
-url = "https://fm.unmi.me"
+logo = "/img/icons/sink.svg"
+title = "Sink"
+bio = "简洁快速的短链接服务，跑在 Cloudflare 上"
+url = "https://s.unmi.me"
 button = "访问"
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/mail.svg"
+title = "Cloud Mail"
+bio = "自托管邮件服务，支持多域名收发"
+url = "https://mail.unmi.me"
+button = "访问"
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/mailez.svg"
+title = "Mailez Webmail"
+bio = "轻量 Webmail 客户端，随开随用"
+url = "https://ml.zlzl.io"
+button = "访问"
+
+
+[[extra.index.widgets]]
+type = "product-list"
+[extra.index.widgets.value]
+title = "基础设施"
+bio = "支撑上面这些服务跑起来的东西"
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/cluster.svg"
+title = "跨地域服务器集群"
+bio = "六台服务器分布于美西 / 香港 / 纽约 / 洛杉矶 / 广州"
+url = "https://vpsct.unmi.me"
+button = "查看状态"
+note = "Oracle · 香港 · 纽约 · 洛杉矶 · 广州"
+hot = true
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/vpsct.svg"
+title = "VpsCT"
+bio = "多机统一管理的服务器面板，所有节点统一接入"
+url = "https://vpsct.unmi.me"
+button = "访问"
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/cfsm.svg"
+title = "CF-Server-Monitor"
+bio = "基于 Cloudflare Workers 的多服务器监控探针"
+url = "https://github.com/unmime/cf-server-monitor-standalone"
+button = "查看项目"
 new = true
 
 
@@ -143,11 +185,19 @@ bio = "自己写的和正在维护的开源工具"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/tgtool.svg"
 title = "unmi_TGtool"
-bio = "Telegram 机器人模块化工具箱"
+bio = "Telegram 机器人模块化工具箱：计算器 · 汇率 · 加密货币行情"
 url = "https://github.com/unmime/unmi_TGtool"
 button = "访问"
-note = "可插拔、零依赖"
+note = "可插拔 · 零依赖"
 hot = true
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/cfsm.svg"
+title = "cf-server-monitor"
+bio = "CF-Server-Monitor 独立部署版，一键跑起多机监控"
+url = "https://github.com/unmime/cf-server-monitor-standalone"
+button = "访问"
+note = "Cloudflare Workers"
+new = true
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/github.svg"
 title = "GitHub"

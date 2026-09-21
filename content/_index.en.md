@@ -12,14 +12,14 @@ new = "New"
 
 [extra.nav.message]
 enable = true
-text = "🎉 All self-hosted services are live"
+text = "🎉 Self-hosted services and open-source projects, continuously updated"
 url = "#services"
 
 [extra.nav.center]
 menus = [
     { name = "Home", url = "Home", internal = true },
     { name = "Services", url = "Services", internal = true },
-    { name = "Self-hosting", url = "Self-hosting", internal = true },
+    { name = "Infrastructure", url = "Infrastructure", internal = true },
     { name = "Projects", url = "Projects", internal = true },
 ]
 
@@ -66,27 +66,30 @@ url = "https://pwd.zlzl.io"
 title = "Memos"
 url = "https://memos.zlzl.io"
 [[extra.index.widgets.value.columns.items]]
-title = "FreshRSS"
-url = "https://rss.zlzl.io"
+title = "FlareMo AI Notes"
+url = "https://fm.unmi.me"
 [[extra.index.widgets.value.columns]]
 title = "🛠 Infrastructure"
 [[extra.index.widgets.value.columns.items]]
 title = "VpsCT Server Panel"
 url = "https://vpsct.unmi.me"
 [[extra.index.widgets.value.columns.items]]
-title = "CloudFlare-ImgBed"
+title = "Sanyue ImgHub"
 url = "https://img.unmi.me"
 [[extra.index.widgets.value.columns.items]]
-title = "FlareMo Notes"
-url = "https://fm.unmi.me"
+title = "Sink URL Shortener"
+url = "https://s.unmi.me"
 [[extra.index.widgets.value.columns]]
-title = "🌐 Open Source"
+title = "🌐 Feeds & Mail"
 [[extra.index.widgets.value.columns.items]]
-title = "unmi_TGtool Telegram Toolkit"
-url = "https://github.com/unmime/unmi_TGtool"
+title = "RSSHub"
+url = "https://rss.zlzl.io"
 [[extra.index.widgets.value.columns.items]]
-title = "GitHub Profile"
-url = "https://github.com/unmime"
+title = "Cloud Mail"
+url = "https://mail.unmi.me"
+[[extra.index.widgets.value.columns.items]]
+title = "Mailez Webmail"
+url = "https://ml.zlzl.io"
 
 
 [[extra.index.widgets]]
@@ -108,30 +111,69 @@ bio = "Lightweight self-hosted note-taking"
 url = "https://memos.zlzl.io"
 button = "Visit"
 [[extra.index.widgets.value.items]]
-logo = "/img/icons/freshrss.svg"
-title = "FreshRSS"
-bio = "Self-hosted RSS reader on your own terms"
+logo = "/img/icons/flaremo.svg"
+title = "FlareMo"
+bio = "AI-native notes, Memos-compatible data"
+url = "https://fm.unmi.me"
+button = "Visit"
+new = true
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/rsshub.svg"
+title = "RSSHub"
+bio = "Make the whole web RSS-feedable"
 url = "https://rss.zlzl.io"
 button = "Visit"
 [[extra.index.widgets.value.items]]
-logo = "/img/icons/vpsct.svg"
-title = "VpsCT"
-bio = "Server panel for unified multi-host management"
-url = "https://vpsct.unmi.me"
-button = "Visit"
-note = "Server panel"
-[[extra.index.widgets.value.items]]
 logo = "/img/icons/imgbed.svg"
-title = "CloudFlare-ImgBed"
+title = "Sanyue ImgHub"
 bio = "Serverless image hosting on Cloudflare"
 url = "https://img.unmi.me"
 button = "Visit"
 [[extra.index.widgets.value.items]]
-logo = "/img/icons/flaremo.svg"
-title = "FlareMo"
-bio = "AI-native notes, Memos compatible"
-url = "https://fm.unmi.me"
+logo = "/img/icons/sink.svg"
+title = "Sink"
+bio = "Simple, speedy, secure URL shortener on Cloudflare"
+url = "https://s.unmi.me"
 button = "Visit"
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/mail.svg"
+title = "Cloud Mail"
+bio = "Self-hosted mail service with multi-domain support"
+url = "https://mail.unmi.me"
+button = "Visit"
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/mailez.svg"
+title = "Mailez Webmail"
+bio = "Lightweight webmail client, ready when you are"
+url = "https://ml.zlzl.io"
+button = "Visit"
+
+
+[[extra.index.widgets]]
+type = "product-list"
+[extra.index.widgets.value]
+title = "Infrastructure"
+bio = "What keeps all of the above running"
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/cluster.svg"
+title = "Multi-region Server Fleet"
+bio = "Six servers across US West / Hong Kong / New York / Los Angeles / Guangzhou"
+url = "https://vpsct.unmi.me"
+button = "View Status"
+note = "Oracle · Hong Kong · New York · Los Angeles · Guangzhou"
+hot = true
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/vpsct.svg"
+title = "VpsCT"
+bio = "Unified multi-host server management panel"
+url = "https://vpsct.unmi.me"
+button = "Visit"
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/cfsm.svg"
+title = "CF-Server-Monitor"
+bio = "Multi-server monitoring probes on Cloudflare Workers"
+url = "https://github.com/unmime/cf-server-monitor-standalone"
+button = "View Project"
 new = true
 
 
@@ -143,11 +185,19 @@ bio = "Open-source tools I built and maintain"
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/tgtool.svg"
 title = "unmi_TGtool"
-bio = "Modular Telegram bot toolkit"
+bio = "Modular Telegram bot toolkit: calculator · FX · crypto quotes"
 url = "https://github.com/unmime/unmi_TGtool"
 button = "Visit"
-note = "Pluggable, zero-dependency"
+note = "Pluggable · zero-dependency"
 hot = true
+[[extra.index.widgets.value.items]]
+logo = "/img/icons/cfsm.svg"
+title = "cf-server-monitor"
+bio = "Standalone CF-Server-Monitor deployment for quick multi-host monitoring"
+url = "https://github.com/unmime/cf-server-monitor-standalone"
+button = "Visit"
+note = "Cloudflare Workers"
+new = true
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/github.svg"
 title = "GitHub"
