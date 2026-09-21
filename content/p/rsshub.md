@@ -11,8 +11,8 @@ back_label = "返回首页"
 meta = ["Node.js", "RSS", "信息聚合", "5000+ 路由"]
 repo = "https://github.com/DIYgod/RSSHub"
 repo_label = "github.com/DIYgod/RSSHub"
-docs = "https://docs.rsshub.app"
-docs_label = "docs.rsshub.app"
+docs = "https://github.com/DIYgod/RSSHub#readme"
+docs_label = "官方文档（GitHub）"
 live = "https://rss.zlzl.io"
 
 highlights = [

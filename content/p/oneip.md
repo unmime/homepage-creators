@@ -9,8 +9,6 @@ tagline = "IP 查询、网络诊断、浏览器检测与 AI 服务状态，一�
 back_anchor = "精选"
 back_label = "返回首页"
 meta = ["React 19", "TypeScript", "Cloudflare Workers", "自研"]
-repo = "https://github.com/unmime/1-ip"
-repo_label = "github.com/unmime/1-ip（私有，需授权）"
 live = "https://1ip.unmi.me"
 
 highlights = [
@@ -61,4 +59,4 @@ logo = "/img/icons/rsshub.svg"
 
 **One IP 把这些工具整合进了一个页面。** 纯前端架构 + Cloudflare Workers 做后端代理，没有服务器成本。打开就知道自己在哪、网络通不通、对方服务活着没、自己的浏览器暴露了多少信息。
 
-这个项目是我自己写的，**代码开源，欢迎参考或自部署**。
+这个项目是我自己写的，目前**源码暂未公开**，但服务本身对外开放，可以直接使用。
