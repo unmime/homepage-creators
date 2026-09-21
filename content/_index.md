@@ -219,9 +219,9 @@ hot = true
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/oneip.svg"
 title = "One IP"
-bio = "IP 查询、网络诊断、浏览器检测与 AI 服务状态工具箱。React 19 + TypeScript + Cloudflare Workers，纯前端架构"
-url = "https://github.com/unmime/1-ip"
-button = "查看源码"
+bio = "IP 查询、网络诊断、浏览器检测与 AI 服务状态工具箱。React 19 + TypeScript + Cloudflare Workers，纯前端架构，零服务器成本"
+url = "https://1ip.unmi.me"
+button = "在线体验"
 note = "React + Workers"
 new = true
 [[extra.index.widgets.value.items]]

@@ -219,9 +219,9 @@ hot = true
 [[extra.index.widgets.value.items]]
 logo = "/img/icons/oneip.svg"
 title = "One IP"
-bio = "IP lookup, network diagnostics, browser detection and AI-service status toolbox. React 19 + TypeScript + Cloudflare Workers, pure frontend architecture"
-url = "https://github.com/unmime/1-ip"
-button = "View Source"
+bio = "IP lookup, network diagnostics, browser detection and AI-service status toolbox. React 19 + TypeScript + Cloudflare Workers, pure frontend at zero server cost"
+url = "https://1ip.unmi.me"
+button = "Try Online"
 note = "React + Workers"
 new = true
 [[extra.index.widgets.value.items]]
