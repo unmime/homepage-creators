@@ -1,7 +1,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/main.css">
+{# CSS 加时间戳版本，避免 CDN/浏览器缓存旧样式 #}
+<link rel="stylesheet" href="/main.css?v={{ now(timestamp=true) }}">
 <link rel="icon" type="image/x-icon" href="{{ config.extra.site.logo }}">
 <link rel="apple-touch-icon" href="{{ config.extra.site.logo }}">
 <link rel="bookmark" href="{{ config.extra.site.logo }}">
