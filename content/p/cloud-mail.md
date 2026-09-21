@@ -13,7 +13,6 @@ repo = "https://github.com/maillab/cloud-mail"
 repo_label = "github.com/maillab/cloud-mail"
 docs = "https://github.com/maillab/cloud-mail"
 docs_label = "官方 README 与部署文档"
-live = "https://mail.unmi.me"
 
 highlights = [
   "支持绑定自有域名收发",

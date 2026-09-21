@@ -13,7 +13,6 @@ repo = "https://github.com/MarSeventh/CloudFlare-ImgBed"
 repo_label = "github.com/MarSeventh/CloudFlare-ImgBed"
 docs = "https://cfbed.sanyue.de"
 docs_label = "cfbed.sanyue.de"
-live = "https://img.unmi.me"
 
 highlights = [
   "上传即用，拖拽 / 粘贴均可",

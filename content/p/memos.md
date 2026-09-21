@@ -13,7 +13,6 @@ repo = "https://github.com/usememos/memos"
 repo_label = "github.com/usememos/memos"
 docs = "https://www.usememos.com/docs"
 docs_label = "usememos.com/docs"
-live = "https://memos.zlzl.io"
 
 highlights = [
   "打开即写，零操作摩擦",

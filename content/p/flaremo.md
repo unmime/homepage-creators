@@ -11,7 +11,6 @@ back_label = "返回首页"
 meta = ["AI 原生", "知识库", "Memos 兼容", "MCP"]
 repo = "https://github.com/realchendahuang/FlareMo"
 repo_label = "github.com/realchendahuang/FlareMo"
-live = "https://fm.unmi.me"
 
 highlights = [
   "与 Memos 数据 / API 兼容",

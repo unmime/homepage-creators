@@ -13,7 +13,6 @@ repo = "https://github.com/DIYgod/RSSHub"
 repo_label = "github.com/DIYgod/RSSHub"
 docs = "https://github.com/DIYgod/RSSHub#readme"
 docs_label = "官方文档（GitHub）"
-live = "https://rss.zlzl.io"
 
 highlights = [
   "覆盖 5000+ 站点路由",

@@ -11,7 +11,6 @@ back_label = "返回首页"
 meta = ["Go", "服务器管理", "自托管"]
 repo = "https://github.com/YongshengWin/VpsCT"
 repo_label = "github.com/YongshengWin/VpsCT"
-live = "https://vpsct.unmi.me"
 
 highlights = [
   "多机统一接入管理",
@@ -43,12 +42,6 @@ slug = "cfsm"
 title = "CF-Server-Monitor"
 desc = "服务器监控探针"
 logo = "/img/icons/cfsm.svg"
-
-[[extra.related]]
-slug = "oneip"
-title = "One IP"
-desc = "网络工具箱"
-logo = "/img/icons/oneip.svg"
 
 [[extra.related]]
 slug = "vaultwarden"

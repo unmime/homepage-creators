@@ -46,12 +46,6 @@ desc = "服务器面板"
 logo = "/img/icons/vpsct.svg"
 
 [[extra.related]]
-slug = "oneip"
-title = "One IP"
-desc = "网络工具箱"
-logo = "/img/icons/oneip.svg"
-
-[[extra.related]]
 slug = "tgtool"
 title = "unmi_TGtool"
 desc = "TG 工具箱"

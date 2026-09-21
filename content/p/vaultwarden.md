@@ -13,7 +13,6 @@ repo = "https://github.com/dani-garcia/vaultwarden"
 repo_label = "github.com/dani-garcia/vaultwarden"
 docs = "https://github.com/dani-garcia/vaultwarden/wiki"
 docs_label = "官方 Wiki 文档"
-live = "https://pwd.zlzl.io"
 
 highlights = [
   "兼容 Bitwarden 全部官方客户端",

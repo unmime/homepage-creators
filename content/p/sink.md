@@ -13,7 +13,6 @@ repo = "https://github.com/miantiao-me/Sink"
 repo_label = "github.com/miantiao-me/Sink"
 docs = "https://sink.cool"
 docs_label = "sink.cool 官方站"
-live = "https://s.unmi.me"
 
 highlights = [
   "自定义短码",
@@ -52,11 +51,6 @@ title = "RSSHub"
 desc = "万物皆可 RSS"
 logo = "/img/icons/rsshub.svg"
 
-[[extra.related]]
-slug = "oneip"
-title = "One IP"
-desc = "网络工具箱"
-logo = "/img/icons/oneip.svg"
 +++
 
 短链接服务的需求很朴素：**把长网址变短，顺便看看有多少人点了**。但市面上要么收费，要么加广告跳转页，要么哪天就关停了。

@@ -44,12 +44,6 @@ desc = "服务器监控探针"
 logo = "/img/icons/cfsm.svg"
 
 [[extra.related]]
-slug = "oneip"
-title = "One IP"
-desc = "网络工具箱"
-logo = "/img/icons/oneip.svg"
-
-[[extra.related]]
 slug = "neon-games"
 title = "neon-games"
 desc = "小游戏合集"

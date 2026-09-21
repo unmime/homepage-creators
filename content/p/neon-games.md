@@ -49,11 +49,6 @@ title = "CF-Server-Monitor"
 desc = "服务器监控探针"
 logo = "/img/icons/cfsm.svg"
 
-[[extra.related]]
-slug = "oneip"
-title = "One IP"
-desc = "网络工具箱"
-logo = "/img/icons/oneip.svg"
 +++
 
 网上想随便玩个小游戏，往往要忍受一堆东西：下载 App、注册账号、看广告、点掉弹窗。其实很多经典游戏根本不需要这些。

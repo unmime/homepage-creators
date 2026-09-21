@@ -13,7 +13,6 @@ repo = "https://github.com/mailez-hq/mailez"
 repo_label = "github.com/mailez-hq/mailez"
 docs = "https://mailez.net"
 docs_label = "mailez.net 官方站"
-live = "https://ml.zlzl.io"
 
 highlights = [
   "轻量快速，打开即用",
